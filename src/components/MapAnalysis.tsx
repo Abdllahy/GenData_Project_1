@@ -42,7 +42,7 @@ export default function MapAnalysis() {
           </p>
         </div>
 
-        {/* First Infogram Embed with Slide Numbers */}
+        {/* First Infogram Embed */}
         <Card className="overflow-hidden border-none shadow-md bg-white">
           <CardContent className="p-0">
             <div
@@ -50,7 +50,7 @@ export default function MapAnalysis() {
               data-id="e380604f-355e-49d3-a490-2735643d9779"
               data-type="interactive"
               data-title="AI"
-              data-slide="1" // Ensures slide controls show up
+              data-slide="1"
               style={{ width: "100%", height: "700px", border: "none" }}
             ></div>
             <div
@@ -88,15 +88,20 @@ export default function MapAnalysis() {
         {/* Divider */}
         <div className="my-12 border-t border-gray-200 w-full" />
 
-        {/* Second Infogram Embed */}
+        {/* Second Infogram Embed (Updated + Scrollable) */}
         <Card className="overflow-hidden border-none shadow-md bg-white">
           <CardContent className="p-0">
             <div
               className="infogram-embed"
-              data-id="6bc47814-f3bd-4204-a43f-e9dba774877e"
+              data-id="6606d6f2-d4d7-4210-be77-544ed18f7c6d"
               data-type="interactive"
-              data-title="Future Growth"
-              style={{ width: "100%", height: "700px", border: "none" }}
+              data-title="future_predictions"
+              style={{
+                width: "100%",
+                minHeight: "950px", // Enough height to show scrollable content
+                border: "none",
+                overflow: "auto",
+              }}
             ></div>
             <div
               style={{
@@ -110,12 +115,12 @@ export default function MapAnalysis() {
               }}
             >
               <a
-                href="https://infogram.com/6bc47814-f3bd-4204-a43f-e9dba774877e"
+                href="https://infogram.com/6606d6f2-d4d7-4210-be77-544ed18f7c6d"
                 style={{ color: "#989898", textDecoration: "none" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Future Growth
+                future_predictions
               </a>
               <br />
               <a
