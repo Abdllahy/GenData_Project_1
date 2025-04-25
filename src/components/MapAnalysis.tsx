@@ -3,6 +3,12 @@
 import React, { useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
+declare global {
+  interface Window {
+    InfogramEmbeds?: any;
+  }
+}
+
 export default function MapAnalysis() {
   useEffect(() => {
     const loadInfogramScript = () => {
